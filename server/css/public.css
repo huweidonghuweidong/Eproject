@@ -1,0 +1,183 @@
+.margin {
+  width: 1190px;
+  margin: 0 auto; }
+
+#top {
+  height: 80px;
+  background: #8033d7; }
+
+#login {
+  height: 29px;
+  border-bottom: 1px solid #e7e7e7;
+  background: #f2f2f2; }
+
+#login .margin {
+  height: 29px;
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  #login .margin p {
+    width: 286px;
+    height: 29px;
+    font: 12px/29px "";
+    color: #969696; }
+    #login .margin p a {
+      margin: 0 5px;
+      cursor: pointer;
+      color: #969696; }
+      #login .margin p a:hover {
+        color: #b20000; }
+  #login .margin .vip, #login .margin .my, #login .margin .dis, #login .margin .nav {
+    width: 80px;
+    height: 88px;
+    background: #f2f2f2;
+    position: absolute;
+    left: 510px;
+    top: 30px;
+    display: none; }
+    #login .margin .vip dl dd, #login .margin .my dl dd, #login .margin .dis dl dd, #login .margin .nav dl dd {
+      margin: 8px 6px;
+      color: #969696;
+      cursor: pointer; }
+      #login .margin .vip dl dd:hover, #login .margin .my dl dd:hover, #login .margin .dis dl dd:hover, #login .margin .nav dl dd:hover {
+        color: #b20000; }
+    #login .margin .vip dl .te, #login .margin .my dl .te, #login .margin .dis dl .te, #login .margin .nav dl .te {
+      margin: 10px 6px; }
+  #login .margin .my {
+    height: 58px;
+    left: 593px;
+    display: none; }
+  #login .margin .dis {
+    height: 105px;
+    left: 676px;
+    display: none; }
+  #login .margin .nav {
+    height: 130px;
+    left: 927px;
+    display: none; }
+  #login .margin ul {
+    width: 754px;
+    display: flex;
+    justify-content: space-between; }
+    #login .margin ul li {
+      font: 12px/29px "";
+      color: #969696;
+      padding: 0 10px; }
+      #login .margin ul li:hover {
+        color: #b20000;
+        cursor: pointer; }
+    #login .margin ul span {
+      font: 12px/29px "";
+      color: #969696; }
+    #login .margin ul .last {
+      padding-left: 20px;
+      background: url(../images/car.png) no-repeat left;
+      color: #b20000;
+      cursor: pointer; }
+      #login .margin ul .last span {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background: #b20000;
+        color: #fff;
+        vertical-align: middle;
+        font: 12px/17px "";
+        text-align: center; }
+    #login .margin ul .active1, #login .margin ul .active2, #login .margin ul .active3, #login .margin ul .active4 {
+      width: 56px;
+      padding-right: 14px;
+      background: url(../images/xiajian.png) no-repeat 70px center; }
+
+header {
+  height: 114px; }
+  header .logo {
+    float: left;
+    display: block;
+    margin: 14px 0 0 10px; }
+  header .logo2 {
+    float: left;
+    display: block;
+    margin: 14px 0 0 20px; }
+  header .logo3 {
+    float: right;
+    display: block;
+    margin-top: 14px; }
+  header .search {
+    float: left;
+    width: 500px;
+    height: 70px;
+    margin: 20px 0 0 64px; }
+    header .search .txt {
+      width: 412px;
+      height: 30px;
+      float: left;
+      border: none;
+      color: #777;
+      padding-left: 4px;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #c30300;
+      border-left-style: solid;
+      border-left-width: 2px;
+      border-left-color: #c30300;
+      border-bottom-style: solid;
+      border-bottom-width: 3px;
+      border-bottom-color: #c30300; }
+    header .search .sub {
+      float: left;
+      width: 81px;
+      height: 35px;
+      background: #c30300;
+      border: none;
+      color: #fff; }
+    header .search ul {
+      width: 332px;
+      height: 34px;
+      display: flex;
+      justify-content: space-between; }
+      header .search ul li {
+        font: 12px/34px "";
+        color: #969696; }
+        header .search ul li a {
+          font: 12px/34px "";
+          color: #969696;
+          cursor: pointer; }
+          header .search ul li a:hover {
+            text-decoration: underline; }
+      header .search ul .te {
+        color: #c30300; }
+
+nav {
+  height: 40px;
+  background: #c40001; }
+  nav p {
+    float: left;
+    width: 180px;
+    height: 40px;
+    font: 16px/40px "";
+    color: #fff;
+    padding-left: 20px; }
+  nav ul {
+    width: 990px;
+    height: 40px;
+    float: left; }
+    nav ul li {
+      float: left;
+      padding: 0 25px;
+      font: 16px/40px "";
+      color: #fff;
+      margin-right: 10px;
+      cursor: pointer; }
+      nav ul li:hover {
+        background: #da211f; }
+    nav ul li:nth-child(1) {
+      background: #da211f; }
+    nav ul li:nth-child(6) {
+      background: url(../images/68.gif) no-repeat right 0; }
+      nav ul li:nth-child(6):hover {
+        background: #da211f url(../images/68.gif) no-repeat right 0; }
+    nav ul li:nth-child(8) {
+      background: url(../images/73.gif) no-repeat right 0; }
+      nav ul li:nth-child(8):hover {
+        background: #da211f url(../images/73.gif) no-repeat right 0; }

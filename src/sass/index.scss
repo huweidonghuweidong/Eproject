@@ -1,198 +1,233 @@
 .margin{width:1190px;margin:0 auto;}
-#top{height:80px;background:#8033d7}
 
-#login{
-    height:29px;
-    border-bottom: 1px solid #e7e7e7;
-    background:#f2f2f2;
-    
-    
-}
-#login .margin{
-    height:29px;
-    display:flex;
-    justify-content:space-between;
-    position:relative;
-    p{
-        width:286px;height:29px;font:12px/29px "";color:#969696;
-        a{
-            margin:0 5px;
-            cursor:pointer;
-            color:#969696;
-            &:hover{
-                color: #b20000;
-            }
-        }
-    }
-    .vip{
-        width: 80px;height:88px;
-        background:#f2f2f2;
-        position: absolute;
-        left:510px;
-        top:30px;
-        display:none;
-        dl{  
-            dd{
-                margin:8px 6px;
-                color:#969696;
-                cursor: pointer;
-                &:hover{
-                    color:#b20000
-                }
-            }
-            .te{
-                margin:10px 6px;
-            }
-        }
-        
-    }
-    .my{
-        @extend .vip;
-        height:58px;
-        left:593px;
-        display:none;
-    }
-    .dis{
-        @extend .vip;
-        height:105px;
-        left:676px;
-        display:none;
-    }
-    .nav{
-        @extend .vip;
-        height:130px;
-        left:927px;
-        display:none;
-    }
-    ul{
-        width:754px;
-        display: flex;
-        justify-content:space-between;
-        li{
-            font:12px/29px "";
-            color:#969696;
-            padding:0 10px;
-            &:hover{
-                color:#b20000;
-                cursor: pointer;
-            }
-        }
-        span{
-            font:12px/29px "";
-            color:#969696;
-        }
-        .last{
-            padding-left: 20px;
-            background:url(../images/car.png) no-repeat left;
-            color:#b20000;
-            cursor: pointer;
-            span{
-                display:inline-block;
-                width:17px;
-                height:17px;
-                border-radius: 50%;
-                background:#b20000;
-                color:#fff;
-                vertical-align:middle;
-                font:12px/17px "";
-                text-align: center;
-            }
+#banner{
+    height:450px;
+    .margin{
+        position: relative;
+        .right{
             
-        }
-        .active1{
-            width:56px;
-            padding-right: 14px;
-            background:url(../images/xiajian.png) no-repeat 70px center;
-        }
-        .active2{
-            @extend .active1;
-        }
-        .active3{
-            @extend .active1;
-        }
-        .active4{
-            @extend .active1;
-        }
-        
-        
-    }
-}
-
-header{
-    height:114px;
-    .logo{
-        float:left;
-        display:block;
-        margin:14px 0 0 10px; 
-    }
-    .logo2{
-        float:left;
-        display:block;
-        margin:14px 0 0 20px;
-    }
-    .logo3{
-        float:right;
-        display:block;
-        margin-top:14px;
-    }
-    .search{
-        float:left;
-        width:500px;
-        height:70px;
-        margin:20px 0 0 64px;
-        .txt{
-            width:412px;
-            height:30px;
             float:left;
-            border:none;
-            color:#777;
-            padding-left:4px;
-            border:{
-                top:{
-                    style:solid;
-                    width:2px;
-                    color:#c30300;
-                }
-                left:{
-                    style:solid;
-                    width:2px;
-                    color:#c30300;
-                }
-                bottom: {
-                    style:solid;
-                    width:3px;
-                    color:#c30300;
-                }
-            }
-        }
-        .sub{
-            float:left;
-            width:81px;
-            height:35px;
-            background:#c30300;
-            border:none;
-            color:#fff;
-        }
-        ul{
-            width:332px;
-            height:34px;
-            display:flex;
-            justify-content:space-between;
-            li{
-                font:12px/34px "";
-                color:#969696;
-                a{
-                    font:12px/34px "";
-                    color:#969696;
+            width:200px;
+            height:450px;
+            background:#f7fcff;   
+            ul{
+                li{
+                    height:45px;
+                    font:12px/45px "";
+                    color:#68676f;
+                    padding-left:37px;   
                     cursor: pointer;
+                   i{
+                       float:left;
+                       display:inline-block;
+                       margin:13px 8px 0 0;
+                       width: 17px;
+                       height:17px;
+                       background: url(../images/tubiao.png) no-repeat;
+                   }
+                   
+                    div{
+                        width:810px;
+                        height:450px;
+                        display:none;
+                        background: rgba(200, 200, 200, .6);
+                        position: absolute;
+                        left:200px;
+                        top:0;
+                    }
+                }
+                li:nth-child(1){
+                    i{
+                        background-position: 0 0;
+                    }
                     &:hover{
-                        text-decoration:underline;
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px 0;
+                        }
+                    }
+                }
+                li:nth-child(2){
+                    i{
+                        background-position: 0 -17px;
+                    }
+                    &:hover{
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px -17px;
+                        }
+                    }
+                }
+                li:nth-child(3){
+                    i{
+                        background-position: 0 -34px;
+                    }
+                    &:hover{
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px -34px;
+                        }
+                    }
+                }
+                li:nth-child(4){
+                    i{
+                        background-position: 0 -51px;
+                    }
+                    &:hover{
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px -51px;
+                        }
+                    }
+                }
+                li:nth-child(5){
+                    i{
+                        background-position: 0 -68px;
+                    }
+                    &:hover{
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px -68px;
+                        }
+                    }
+                }
+                li:nth-child(6){
+                    i{
+                        background-position: 0 -85px;
+                    }
+                    &:hover{
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px -85px;
+                        }
+                    }
+                }
+                li:nth-child(7){
+                    i{
+                        background-position: 0 -102px;
+                    }
+                    &:hover{
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px -102px;
+                        }
+                    }
+                }
+                li:nth-child(8){
+                    i{
+                        background-position: 0 -119px;
+                    }
+                    &:hover{
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px -119px;
+                        }
+                    }
+                }
+                li:nth-child(9){
+                    i{
+                        background-position: 0 -136px;
+                    }
+                    &:hover{
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px -136px;
+                        }
+                    }
+                }
+                li:nth-child(10){
+                    i{
+                        background-position: 0 -153px;
+                    }
+                    &:hover{
+                        background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                        i{
+                            background-position: -17px -153px;
+                        }
                     }
                 }
             }
-            .te{
-                color:#c30300;
-            }
+             // li:nth-child(2){
+                //     @extend li:nth-child(1){
+                //         i{
+                //             background-position: -17px -17px;
+                //         }
+                //     }
+                // }
+                // li:nth-child(3){
+                //     @extend li:nth-child(1){
+                //         i{
+                //             background-position: -17px -34px;
+                //         }
+                //     }
+                // }
+                // li:nth-child(4){
+                //     @extend li:nth-child(1){
+                //         i{
+                //             background-position: -17px -51px;
+                //         }
+                //     }
+                // }
+                // li:nth-child(5){
+                //     @extend li:nth-child(1){
+                //         i{
+                //             background-position: -17px -51px;
+                //         }
+                //     }
+                // }
+                // li:nth-child(6){
+                //     @extend li:nth-child(1){
+                //         i{
+                //             background-position: -17px -85px;
+                //         }
+                //     }
+                // }
+                // li:nth-child(7){
+                //     @extend li:nth-child(1){
+                //         i{
+                //             background-position: -17px -102px;
+                //         }
+                //     }
+                // }
+                // li:nth-child(8){
+                //     @extend li:nth-child(1){
+                //         i{
+                //             background-position: -17px -119px;
+                //         }
+                //     }
+                // }
+                // li:nth-child(9){
+                //     @extend li:nth-child(1){
+                //         i{
+                //             background-position: -17px -136px;
+                //         }
+                //     }
+                // }
+                // li:nth-child(10){
+                //     i{
+                //         background-position: 0 -68px;
+                //     }
+                //     &:hover{
+                //         background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
+                //         i{
+                //             background-position: -17px -153px;
+                //         }
+                //     }
+                // }
+            
+        }
+    }
+}
+#banner{
+    position: relative;
+    .margin{
+        .imgbox img{
+        
+            width:810px;
+            height:450px;
+            position: absolute;
+            left:200px;
+            top:0;
         }
     }
 }
