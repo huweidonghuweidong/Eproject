@@ -6,25 +6,26 @@
   height: 450px; }
   #banner .margin {
     position: relative; }
-    #banner .margin .right {
+    #banner .margin .left {
       float: left;
       width: 200px;
       height: 450px;
-      background: #f7fcff; }
-      #banner .margin .right ul li {
+      background: #f7fcff;
+      opacity: .95; }
+      #banner .margin .left ul li {
         height: 45px;
         font: 12px/45px "";
         color: #68676f;
         padding-left: 37px;
         cursor: pointer; }
-        #banner .margin .right ul li i {
+        #banner .margin .left ul li i {
           float: left;
           display: inline-block;
           margin: 13px 8px 0 0;
           width: 17px;
           height: 17px;
           background: url(../images/tubiao.png) no-repeat; }
-        #banner .margin .right ul li div {
+        #banner .margin .left ul li div {
           width: 810px;
           height: 450px;
           display: none;
@@ -32,72 +33,227 @@
           position: absolute;
           left: 200px;
           top: 0; }
-      #banner .margin .right ul li:nth-child(1) i {
+      #banner .margin .left ul li:nth-child(1) i {
         background-position: 0 0; }
-      #banner .margin .right ul li:nth-child(1):hover {
+      #banner .margin .left ul li:nth-child(1):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(1):hover i {
+        #banner .margin .left ul li:nth-child(1):hover i {
           background-position: -17px 0; }
-      #banner .margin .right ul li:nth-child(2) i {
+      #banner .margin .left ul li:nth-child(2) i {
         background-position: 0 -17px; }
-      #banner .margin .right ul li:nth-child(2):hover {
+      #banner .margin .left ul li:nth-child(2):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(2):hover i {
+        #banner .margin .left ul li:nth-child(2):hover i {
           background-position: -17px -17px; }
-      #banner .margin .right ul li:nth-child(3) i {
+      #banner .margin .left ul li:nth-child(3) i {
         background-position: 0 -34px; }
-      #banner .margin .right ul li:nth-child(3):hover {
+      #banner .margin .left ul li:nth-child(3):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(3):hover i {
+        #banner .margin .left ul li:nth-child(3):hover i {
           background-position: -17px -34px; }
-      #banner .margin .right ul li:nth-child(4) i {
+      #banner .margin .left ul li:nth-child(4) i {
         background-position: 0 -51px; }
-      #banner .margin .right ul li:nth-child(4):hover {
+      #banner .margin .left ul li:nth-child(4):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(4):hover i {
+        #banner .margin .left ul li:nth-child(4):hover i {
           background-position: -17px -51px; }
-      #banner .margin .right ul li:nth-child(5) i {
+      #banner .margin .left ul li:nth-child(5) i {
         background-position: 0 -68px; }
-      #banner .margin .right ul li:nth-child(5):hover {
+      #banner .margin .left ul li:nth-child(5):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(5):hover i {
+        #banner .margin .left ul li:nth-child(5):hover i {
           background-position: -17px -68px; }
-      #banner .margin .right ul li:nth-child(6) i {
+      #banner .margin .left ul li:nth-child(6) i {
         background-position: 0 -85px; }
-      #banner .margin .right ul li:nth-child(6):hover {
+      #banner .margin .left ul li:nth-child(6):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(6):hover i {
+        #banner .margin .left ul li:nth-child(6):hover i {
           background-position: -17px -85px; }
-      #banner .margin .right ul li:nth-child(7) i {
+      #banner .margin .left ul li:nth-child(7) i {
         background-position: 0 -102px; }
-      #banner .margin .right ul li:nth-child(7):hover {
+      #banner .margin .left ul li:nth-child(7):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(7):hover i {
+        #banner .margin .left ul li:nth-child(7):hover i {
           background-position: -17px -102px; }
-      #banner .margin .right ul li:nth-child(8) i {
+      #banner .margin .left ul li:nth-child(8) i {
         background-position: 0 -119px; }
-      #banner .margin .right ul li:nth-child(8):hover {
+      #banner .margin .left ul li:nth-child(8):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(8):hover i {
+        #banner .margin .left ul li:nth-child(8):hover i {
           background-position: -17px -119px; }
-      #banner .margin .right ul li:nth-child(9) i {
+      #banner .margin .left ul li:nth-child(9) i {
         background-position: 0 -136px; }
-      #banner .margin .right ul li:nth-child(9):hover {
+      #banner .margin .left ul li:nth-child(9):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(9):hover i {
+        #banner .margin .left ul li:nth-child(9):hover i {
           background-position: -17px -136px; }
-      #banner .margin .right ul li:nth-child(10) i {
+      #banner .margin .left ul li:nth-child(10) i {
         background-position: 0 -153px; }
-      #banner .margin .right ul li:nth-child(10):hover {
+      #banner .margin .left ul li:nth-child(10):hover {
         background: #dc1e22 url(../images/youjian.png) no-repeat 154px center; }
-        #banner .margin .right ul li:nth-child(10):hover i {
+        #banner .margin .left ul li:nth-child(10):hover i {
           background-position: -17px -153px; }
 
 #banner {
-  position: relative; }
+  position: relative;
+  background: #4bbffc; }
   #banner .margin .imgbox img {
     width: 810px;
     height: 450px;
     position: absolute;
     left: 200px;
     top: 0; }
+  #banner .margin .right {
+    width: 190px;
+    height: 225px;
+    position: absolute;
+    left: 1010px;
+    background: #fff;
+    overflow: hidden; }
+    #banner .margin .right img {
+      position: absolute;
+      top: 0; }
+  #banner .margin .bottom {
+    width: 190px;
+    height: 225px;
+    position: absolute;
+    left: 1010px;
+    top: 225px;
+    background: #fff;
+    overflow: hidden; }
+    #banner .margin .bottom img {
+      position: absolute;
+      top: 0; }
+
+#special {
+  height: 290px;
+  background: #f5f5f5;
+  padding-top: 30px; }
+  #special .margin .left {
+    width: 595px;
+    height: 290px;
+    float: left; }
+    #special .margin .left p {
+      height: 38px;
+      font: 16px/38px "";
+      color: #323232;
+      padding-left: 14px;
+      position: relative; }
+      #special .margin .left p:after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 18px;
+        position: absolute;
+        left: 0;
+        top: 9px;
+        background: #f65a43; }
+    #special .margin .left img {
+      display: block;
+      border-top: 1px solid #f65a43; }
+  #special .margin .right {
+    width: 595px;
+    height: 290px;
+    float: left; }
+    #special .margin .right .top {
+      height: 38px; }
+      #special .margin .right .top ul {
+        width: 375px;
+        display: flex; }
+        #special .margin .right .top ul li {
+          width: 125px;
+          height: 38px;
+          font: 16px/38px "";
+          color: #28313a;
+          text-align: center;
+          position: relative; }
+          #special .margin .right .top ul li::before {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 18px;
+            background: #ccc;
+            position: absolute;
+            top: 10px;
+            left: 124px; }
+    #special .margin .right .bottom {
+      width: 595px;
+      height: 250px;
+      border-top: 1px solid #f65a43;
+      border-bottom: 1px solid #dbdbdb; }
+
+#shopping {
+  height: 442px;
+  padding-top: 30px;
+  background: #f5f5f5; }
+  #shopping .margin .right {
+    float: right;
+    width: 594px;
+    height: 322px;
+    margin-bottom: 30px; }
+    #shopping .margin .right .r-left {
+      width: 400px;
+      height: 322px;
+      float: left;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      #shopping .margin .right .r-left img:nth-child(1) {
+        margin-bottom: 3px; }
+      #shopping .margin .right .r-left img:nth-child(2) {
+        margin-bottom: 3px; }
+      #shopping .margin .right .r-left img:hover {
+        -webkit-filter: brightness(0.8); }
+    #shopping .margin .right .r-right {
+      width: 192px;
+      height: 322px;
+      float: right; }
+      #shopping .margin .right .r-right .r-r-top {
+        height: 40px;
+        background: #e0e0e0; }
+      #shopping .margin .right .r-right .r-r-bottom {
+        width: 192px;
+        height: 283px; }
+  #shopping .margin .img {
+    height: 90px; }
+
+main {
+  height: 3164px;
+  padding-top: 30px;
+  background: #f5f5f5; }
+  main .margin .ff {
+    height: 422px;
+    margin-bottom: 30px;
+    position: relative; }
+    main .margin .ff .f-left {
+      width: 192px;
+      height: 422px;
+      float: left;
+      position: relative;
+      overflow: hidden; }
+      main .margin .ff .f-left .img img {
+        border-top: 1px solid #cbccd0;
+        position: absolute;
+        top: 80px;
+        left: 0; }
+      main .margin .ff .f-left ul {
+        position: absolute;
+        bottom: 0;
+        width: 192px;
+        height: 113px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; }
+        main .margin .ff .f-left ul li {
+          width: 96px;
+          height: 37px;
+          font: 12px/37px "";
+          text-align: center; }
+    main .margin .ff .f1-4 {
+      float: left;
+      margin-left: 1px; }
+    main .margin .ff .right {
+      width: 597px;
+      height: 422px;
+      float: right;
+      background: #fff; }

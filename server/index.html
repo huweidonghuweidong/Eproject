@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="public/css/public.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/index.css">
+    <!-- <script src="public/js/require.js" data-main="js/main.js"></script> -->
     <script src="public/js/jquery.2.2.4.js"></script>
     <script src="banner/js/bannner.js"></script>
-    
+    <script src="banner/js/jquery.banner.1.1.js"></script>
+    <script src="js/index.js"></script>
     <script>
         $(function(){
             $("#top").load("http://localhost:8383/public/html/public.html .top")
@@ -41,7 +43,7 @@
     </nav>
     <div id="banner">
         <div class="margin">
-            <div class="right">
+            <div class="left">
                 <ul>
                     <li>
                         <i></i>
@@ -114,17 +116,115 @@
                 </ul>
             </div>
             <div class="imgbox">
-                <img src="images/banner1.jpg"/>
+                <img src="images/banner1.jpg"style="z-index: 1;"/>
                 <img src="images/banner2.jpg"/>
                 <img src="images/banner3.jpg"/>
                 <img src="images/banner4.jpg"/>
             </div>
+            <div class="right">
+                <img src="images/banner-1.jpg"/>
+                <img src="images/banner-3.jpg"/>
+            </div>
+            <div class="bottom">
+                <img src="images/banner-2.jpg"/>
+                <img src="images/banner-4.jpg"/>
+            </div>
         </div>
     </div>
+    <div id="special">
+        <div class="margin">
+            <div class="left clear">
+                <p>特价礼包专区</p>
+                <img src="images/special.jpg"/>
+            </div>
+            <div class="right clear">
+                <div class="top">
+                    <ul>
+                        <li>10元包邮区</li>
+                        <li>20元包邮区</li>
+                        <li>30元包邮区</li>
+                    </ul>
+                </div>
+                <div class="bottom">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="shopping">
+        <div class="margin">
+            <img src="images/shopping.jpg"/>
+            <div class="right">
+                <div class="r-left clear">
+                    <img src="images/r-1.jpg">
+                    <img src="images/r-2.jpg">
+                    <img src="images/r-3.jpg">
+                    <img src="images/r-4.jpg">
+                </div>
+                <div class="r-right clear">
+                    <div class="r-r-top">
+
+
+
+                    </div>
+                    <div class="r-r-bottom">
+
+
+
+                    </div>
+                </div>
+            </div>
+            <img src="images/shopping2.jpg" class="img"/>
+        </div>
+    </div>
+    <main>
+        <div class="margin">
+            <div class="ff f1">
+                <div class="f-left clear">
+                    <img src="images/f1.jpg"/>
+                    <div class="img">
+                        <img src="images/f1-1.jpg" style="z-index:1"/>
+                        <img src="images/f1-2.jpg"/>
+                    </div>
+                    <ul>
+                        <li>中性笔</li>
+                        <li>圆珠笔</li>
+                        <li>荧光笔</li>
+                        <li>白板笔</li>
+                        <li>记号笔</li>
+                        <li>POP笔</li>
+                    </ul>
+                </div>
+                <img src="images/f1-4.jpg" class="f1-4"/>
+                <div class="right">
+
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 <script>
-    $("#banner").banner({
+    $("#banner").banner2({
         items:$(".imgbox").children()
+    })
+    $("#banner").banner({
+        items:$("#banner .right").children(),
+        autoPlay:true,
+        delayTime:5000,
+    })
+    $("#banner").banner({
+        items:$("#banner .bottom").children(),
+        autoPlay:true,
+        delayTime:5000,
+        moreTime:300
+    })
+    $(".f-left").banner({
+        items:$(".f-left .img").children(),
+        autoPlay:true,
+        delayTime:5000,
+        moreTime:300,
+        list:true,
+        index:0
     })
 </script>
 </html>
