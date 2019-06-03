@@ -257,3 +257,44 @@ main {
       height: 422px;
       float: right;
       background: #fff; }
+      main .margin .ff .right .r-r {
+        float: left;
+        width: 199px;
+        height: 422px; }
+        main .margin .ff .right .r-r .r-r-c {
+          width: 199px;
+          height: 54px;
+          text-align: center; }
+        main .margin .ff .right .r-r img:hover {
+          transition: .3s linear all;
+          transform: translate(-7px, 0); }
+
+#hot {
+  height: 300px;
+  background: #fff; }
+  #hot .margin h1 {
+    width: 100%;
+    height: 58px;
+    font: 22px/58px "";
+    color: #7e7e7e; }
+  #hot .margin ul {
+    border-top: 1px solid #f9f9f9;
+    border-left: 1px solid #f9f9f9;
+    width: 1182px;
+    height: 242px; }
+    #hot .margin ul li {
+      float: left; }
+      #hot .margin ul li a {
+        display: block;
+        width: 146px;
+        height: 80px;
+        border-right: 1px solid #f9f9f9;
+        border-bottom: 1px solid #f9f9f9;
+        position: relative; }
+        #hot .margin ul li a img {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto; }

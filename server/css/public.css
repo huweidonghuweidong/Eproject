@@ -181,3 +181,31 @@ nav {
       background: url(../images/73.gif) no-repeat right 0; }
       nav ul li:nth-child(8):hover {
         background: #da211f url(../images/73.gif) no-repeat right 0; }
+
+#friend {
+  height: 500px;
+  padding-top: 40px;
+  background: #fff; }
+  #friend .margin .f-top {
+    height: 218px; }
+    #friend .margin .f-top .t {
+      height: 122px;
+      margin-left: 71px; }
+      #friend .margin .f-top .t ul {
+        height: 30px;
+        width: 300px; }
+        #friend .margin .f-top .t ul li {
+          width: 100px;
+          height: 30px;
+          float: left;
+          background: #f3f3f3;
+          font: 12px/30px "";
+          color: #000;
+          text-align: center; }
+      #friend .margin .f-top .t .t-b {
+        height: 72px;
+        margin-top: 20px;
+        background: red; }
+  #friend .margin .f-bottom {
+    height: 241px;
+    border-top: 1px solid #e1e1e1; }
