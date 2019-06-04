@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../public/css/public.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="../public/js/jquery.2.2.4.js"></script>
+    <script>
+        $(function(){
+            $("#friend").load("http://localhost:8383/public/html/public.html .footer-top")
+        })
+        $(function(){
+            $("footer").load("http://localhost:8383/public/html/public.html .footer")
+        })
+        $(function(){
+            $("#about").load("http://localhost:8383/public/html/public.html .about")
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="margin">
+            <img src="images/deng_logo.jpg"/>
+            <span>欢迎注册</span>
+        </div>
+    </header>
+    <main>
+        <div class="margin">
+            <img src="images/tu.jpg"/>
+            <div class="dl">
+                <h3>账号密码注册</h3>
+                <input type="text" placeholder="账号" id="user">
+                <input type="password" placeholder="密码" id="pass">
+                <p>已有账号？<a href="login.html">马上登录</a></p>
+                <input type="button" value="注册" id="btn">
+                <h4>第三方登录</h4>
+                <a href="https://www.wjyh.com/mMDefault-MLoginQQ.html&a=qqLogin" class="aa qq">QQ登录</a>
+                <a href="https://www.wjyh.com/mMDefault-MLoginWeibo.html&a=weiboLogin" class="aa weibo">微博登录</a>
+                <a href="https://www.wjyh.com/mMDefault-MLoginWeixin.html&a=weixinLogin" class="aa weixin">微信登录</a>
+            </div>
+        </div>
+    </main>
+    <div id="friend">
+
+    </div>
+    <div id="about">
+
+    </div>
+    <footer>
+
+    </footer>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

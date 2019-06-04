@@ -14,6 +14,53 @@
     // }).mouseout(function(){
     //     $("#banner .cai").css({display:"none"})
     // })
+    $("#login .active1").hover(function(){
+        $(".vip").css({display:"block"})
+    },function(){
+        $(".vip").css({display:"none"})
+    })
+    $(".vip").hover(function(){
+        $(".vip").css({display:"block"})
+    },function(){
+        $(".vip").css({display:"none"})
+    })
+    
+
+    $("#login .active2").hover(function(){
+        $(".my").css({display:"block"})
+    },function(){
+        $(".my").css({display:"none"})
+    })
+    $(".my").hover(function(){
+        $(".my").css({display:"block"})
+    },function(){
+        $(".my").css({display:"none"})
+    })
+
+
+    $("#login .active3").hover(function(){
+        $(".dis").css({display:"block"})
+    },function(){
+        $(".dis").css({display:"none"})
+    })
+    $(".dis").hover(function(){
+        $(".dis").css({display:"block"})
+    },function(){
+        $(".dis").css({display:"none"})
+    })
+
+
+    $("#login .active4").hover(function(){
+        $(".nav").css({display:"block"})
+    },function(){
+        $(".nav").css({display:"none"})
+    })
+    $(".nav").hover(function(){
+        $(".nav").css({display:"block"})
+    },function(){
+        $(".nav").css({display:"none"})
+    })
+
 
     $("#banner .left ul").children().hover(function(){
         $("#banner .cai").css({display:"block"})
@@ -285,6 +332,65 @@
         }
     }
     new New();
+    console.log($("#dl"))
+    class Index{
+        constructor(){
+            this.init();
+        }
+        init(){
+            //获取到localStorage的所有信息，并转换
+            this.juser=localStorage.getItem("juser")?JSON.parse(localStorage.getItem("juser")):[];
+            //检查onoff的值
+            for(var i=0;i<this.juser.length;i++){
+                if(this.juser[i].onoff==1){
+                    console.log( $("#dl"))
+                    // $("#dl").remove();
+                    // $("#zx").append(`<a id="dl">${this.juser[i].user}</a>`);
+                    $("#dl").text(this.juser[i].user);
+                    $("#dl").attr('href','##');
+                    $("#logout").css({display:"inline-block"})
+                    $("#zc").css({display:"none"})
+                    // console.log($("#dl").html(this.juser[i].user))
+                    this.addLogout();
 
+                }
+            }
+        }
+        addLogout(){
+            var that=this;
+            $("#logout").click(function(){
+                //找到具体的账号
+                console.log(typeof($("#dl").text()))
+                for(var i=0;i<that.juser.length;i++){
+                    if( $("#dl").text()==that.juser[i].user){
+                        that.juser[i].onoff=0;
+                        //修改完一定要改回去
+                        localStorage.setItem("juser",JSON.stringify(that.juser))
+                        $("#dl").text("登录");
+                        $("#logout").css({display:"none"})
+                        $("#zc").css({display:"inline-block"})
+                    }   
+                }
+            })
+        }
+    }
+    new Index();
     
+    $("#nn").children("li").click(function(){
+        $(this).css({background:"#c40001"}).siblings().css({background:"#b6b6b6"})
+        $("html").animate({
+            scrollTop:$(".ff").eq($(this).index()).offset().top
+        })
+    });
+    $(document).scroll(function() {
+        console.log($(document).scrollTop())
+        if($(document).scrollTop()>750){
+            $("#nn").css({display:"block"})
+            $("#sou").css({display:"block"})
+        }
+        if($(document).scrollTop()<750){
+            $("#nn").css({display:"none"})
+            $("#sou").css({display:"none"})
+        }
+    });
 })()

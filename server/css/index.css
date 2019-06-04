@@ -386,3 +386,52 @@ main {
           top: 0;
           bottom: 0;
           margin: auto; }
+
+#nn {
+  width: 30px;
+  position: fixed;
+  left: 250px;
+  top: 400px;
+  display: none;
+  background: #b6b6b6; }
+  #nn li {
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    border-top: 1px solid #b6b6b6; }
+
+#sou {
+  display: none;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5; }
+  #sou .margin img {
+    display: block;
+    float: left;
+    margin: 8px 0 0 44px; }
+  #sou .margin #txt2 {
+    float: left;
+    display: block;
+    width: 522px;
+    height: 30px;
+    border: 3px solid #c91919;
+    margin: 5px 0 0 95px;
+    padding-left: 10px;
+    color: #828282; }
+  #sou .margin #btn2 {
+    border: none;
+    float: left;
+    display: block;
+    width: 68px;
+    height: 36px;
+    background: #c91919;
+    font: 16px/36px "";
+    color: #fff;
+    margin-top: 5px; }

@@ -17,7 +17,7 @@
   justify-content: space-between;
   position: relative; }
   #login .margin p {
-    width: 286px;
+    width: 336px;
     height: 29px;
     font: 12px/29px "";
     color: #969696; }
@@ -27,6 +27,8 @@
       color: #969696; }
       #login .margin p a:hover {
         color: #b20000; }
+    #login .margin p #logout {
+      display: none; }
   #login .margin .vip, #login .margin .my, #login .margin .dis, #login .margin .nav {
     width: 80px;
     height: 88px;

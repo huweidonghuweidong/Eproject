@@ -14,7 +14,7 @@
     justify-content:space-between;
     position:relative;
     p{
-        width:286px;height:29px;font:12px/29px "";color:#969696;
+        width:336px;height:29px;font:12px/29px "";color:#969696;
         a{
             margin:0 5px;
             cursor:pointer;
@@ -22,6 +22,9 @@
             &:hover{
                 color: #b20000;
             }
+        }
+        #logout{
+            display:none;
         }
     }
     .vip{
