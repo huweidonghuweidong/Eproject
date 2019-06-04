@@ -4,8 +4,56 @@
     height:450px;
     .margin{
         position: relative;
+        .cai{
+            width:810px;
+            height:450px;
+            display:none;
+            z-index: 500;
+            background:rgba(255, 255, 255, .95);
+            position: absolute;
+            left:200px;
+            top:0;
+            box-sizing: border-box;
+            padding:6px 40px 0 14px;
+            p{
+                margin-top:5px;
+                color:#d41f2a;
+                font:12px/2 "";
+                border-bottom:1px dashed #ccc;
+                a{
+                    color:#000;
+                    float:right;
+                    &:hover{
+                        color:#d41f2a;
+                        text-decoration: underline
+                    }
+                }
+            }
+
+            ul{
+               width:764px;
+                
+                li{
+                    float:left;
+                    padding: 0 6px;
+                    margin-top:2px;
+                    border-left:1px solid #ccc;
+                    a{
+                        &:hover{
+                            color:#d41f2a;
+                            text-decoration: underline
+                        }
+                    
+                    }
+                }
+            }
+        }
+        .imgbox{
+            img:nth-child(1){
+                z-index: 1;
+            }
+        }
         .left{
-            
             float:left;
             width:200px;
             height:450px;
@@ -26,16 +74,6 @@
                        height:17px;
                        background: url(../images/tubiao.png) no-repeat;
                    }
-                   
-                    div{
-                        width:810px;
-                        height:450px;
-                        display:none;
-                        background: rgba(200, 200, 200, .6);
-                        position: absolute;
-                        left:200px;
-                        top:0;
-                    }
                 }
                 li:nth-child(1){
                     i{
@@ -125,6 +163,7 @@
                         }
                     }
                 }
+        
                 li:nth-child(9){
                     i{
                         background-position: 0 -136px;
@@ -147,75 +186,7 @@
                         }
                     }
                 }
-            }
-             // li:nth-child(2){
-                //     @extend li:nth-child(1){
-                //         i{
-                //             background-position: -17px -17px;
-                //         }
-                //     }
-                // }
-                // li:nth-child(3){
-                //     @extend li:nth-child(1){
-                //         i{
-                //             background-position: -17px -34px;
-                //         }
-                //     }
-                // }
-                // li:nth-child(4){
-                //     @extend li:nth-child(1){
-                //         i{
-                //             background-position: -17px -51px;
-                //         }
-                //     }
-                // }
-                // li:nth-child(5){
-                //     @extend li:nth-child(1){
-                //         i{
-                //             background-position: -17px -51px;
-                //         }
-                //     }
-                // }
-                // li:nth-child(6){
-                //     @extend li:nth-child(1){
-                //         i{
-                //             background-position: -17px -85px;
-                //         }
-                //     }
-                // }
-                // li:nth-child(7){
-                //     @extend li:nth-child(1){
-                //         i{
-                //             background-position: -17px -102px;
-                //         }
-                //     }
-                // }
-                // li:nth-child(8){
-                //     @extend li:nth-child(1){
-                //         i{
-                //             background-position: -17px -119px;
-                //         }
-                //     }
-                // }
-                // li:nth-child(9){
-                //     @extend li:nth-child(1){
-                //         i{
-                //             background-position: -17px -136px;
-                //         }
-                //     }
-                // }
-                // li:nth-child(10){
-                //     i{
-                //         background-position: 0 -68px;
-                //     }
-                //     &:hover{
-                //         background:#dc1e22 url(../images/youjian.png) no-repeat 154px center;
-                //         i{
-                //             background-position: -17px -153px;
-                //         }
-                //     }
-                // }
-            
+            }  
         }
     }
 }
@@ -256,12 +227,14 @@
             }
         }
     }
+
 }
 #special{
     height: 290px;
     background:#f5f5f5;
     padding-top:30px;
     .margin{
+        
         .left{
             width:595px;
             height: 290px;
@@ -289,6 +262,7 @@
             }
         }
         .right{
+
             width:595px;
             height: 290px;
             float: left;
@@ -296,10 +270,11 @@
                 height:38px;
                 ul{
                     width:375px;
-                    
+                
                     display:flex;
                     li{
                         width:125px;
+                        cursor: pointer;
                         height:38px;
                         font:16px/38px "";
                         color:#28313a;
@@ -324,9 +299,76 @@
                 height:250px;
                 border-top:1px solid #f65a43;
                 border-bottom:1px solid #dbdbdb;
+                .l{
+                    float:left;
+                    width:197px;
+                    height:100%;
+                    border-right:1px solid #e1e1e1;
+                    a{
+                        display:block;
+                        width:167px;
+                        height:225px;
+                        padding-left: 30px;
+                        img{
+                            width:140px;
+                            height:140px;
+                            display:block;
+                            margin-top:25px; 
+                        }
+                        h3{
+                            font:12px/38px "";
+                            color:#000;
+                        }
+                        p{
+                            font:14px/30px "";
+                            color:#d22600;
+                            b{
+                                color:#999;
+                                font:12px/38px "";
+                            }
+                            position: relative;
+                        }
+                        p:after{
+                            content: "";
+                            display:block;
+                            width:64px;
+                            height:1px;
+                            background: #999;
+                            position: absolute;
+                            left:74px;
+                            top:20px;
+                        }
+                    }
+                }
+                .c{
+                    @extend .l;
+                    // float:left;
+                    // width:197px;
+                    // height:100%;
+                    // border-right:1px solid #e1e1e1;
+                    // a{
+                    //     display:block;
+                    //     width:100%;
+                    //     height:100%;
+                    // }
+                }
+                .r{
+                    @extend .l;
+                    border-right:none;
+                    
+                    // float:left;
+                    // width:197px;
+                    // height:100%;
+                    // a{
+                    //     display:block;
+                    //     width:100%;
+                    //     height:100%;
+                    // }
+                }
             }
         }
     }
+
 }
 #shopping{
     height:442px;
@@ -365,10 +407,45 @@
                 .r-r-top{
                     height:40px;
                     background: #e0e0e0;
+                    ul{
+                        width:100%;
+                        height:100%;
+                        display:flex;
+                        li{
+                            cursor: pointer;
+                            width:64px;
+                            height:40px;
+                            background:e0e0e0;
+                            color:#646464;
+                            font:16px/40px "";
+                            text-align: center;
+                            &:nth-child(3){
+                                color:#000;
+                            }
+                        }
+                    }
                 }
+            
                 .r-r-bottom{
                     width:192px;
                     height:283px;
+                    ul{
+                        li{
+                            a{
+                                display:block;
+                                width:180px;
+                                height:39px;
+                                border-bottom:1px solid #e0e0e0;
+                                font:12px/39px "";
+                                color:#9f9f9f;
+                                margin-left:3px;
+                                &:hover{
+                                    cursor: pointer;
+                                    color:#d41f2a;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -446,6 +523,7 @@ main{
         }
     }
 }
+
 #hot{
     height:300px;
     background: #fff;

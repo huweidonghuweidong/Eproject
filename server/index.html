@@ -12,7 +12,6 @@
     <script src="public/js/jquery.2.2.4.js"></script>
     <script src="banner/js/bannner.js"></script>
     <script src="banner/js/jquery.banner.1.1.js"></script>
-    <script src="js/index.js"></script>
     <script>
         $(function(){
             $("#top").load("http://localhost:8383/public/html/public.html .top")
@@ -29,7 +28,14 @@
         $(function(){
             $("#friend").load("http://localhost:8383/public/html/public.html .footer-top")
         })
+        $(function(){
+            $("footer").load("http://localhost:8383/public/html/public.html .footer")
+        })
+        $(function(){
+            $("#about").load("http://localhost:8383/public/html/public.html .about")
+        })
     </script>
+    
 </head>
 <body>
     <div id="top">
@@ -46,92 +52,172 @@
     </nav>
     <div id="banner">
         <div class="margin">
-            <div class="left">
-                <ul>
-                    <li>
-                        <i></i>
-                        <p>办公用品</p>
-                        <div>
-                        </div>
-                    </li>
-                    <li>
-                        <i></i>
-                        <p>学生用品</p>
-                        <div>
-                        </div>
-                    </li>
-                    <li>
-                        <i></i>
-                        <p>行政用品</p>
-                        <div>
-        
-                        </div>
-                    </li>
-                    <li>
-                        <i></i>
-                        <p>财务用品</p>
-                        <div>
-        
-                        </div>
-                    </li>
-                    <li>
-                        <i></i>
-                        <p>会议用品</p>
-                        <div>
-        
-                        </div>
-                    </li>
-                    <li>
-                        <i></i>
-                        <p>工厂用品</p>
-                        <div>
-        
-                        </div>
-                    </li>
-                    <li>
-                        <i></i>
-                        <p>工程用品</p>
-                        <div>
-        
-                        </div>
-                    </li>
-                    <li>
-                        <i></i>
-                        <p>定制用品</p>
-                        <div>
-        
-                        </div>
-                    </li>
-                    <li>
-                        <i></i>
-                        <p>教学用品</p>
-                        <div>
-        
-                        </div>
-                    </li>
-                    <li>
-                        <i></i>
-                        <p>美术用品</p>
-                        <div>
-        
-                        </div>
-                    </li>
+            <div class="cai">
+                <p>纸制品<a href="##">更多</a></p>
+                <ul class="clear">
+                        <li> <a href="##">打印标签 手写标签</a></li>
+                        <li> <a href="##">电脑打印纸</a> </li>
+                        <li> <a href="##">云彩纸 卡纸</a> </li>
+                        <li> <a href="##">复印纸 彩色复印纸</a> </li>
+                        <li> <a href="##">复写纸</a> </li>
+                        <li> <a href="##">工程复印纸</a> </li>
+                        <li> <a href="##">相片纸 激光打印纸 喷墨打印纸</a> </li>
+                        <li> <a href="##">收银纸</a> </li>
+                        <li> <a href="##">传真纸</a> </li>
+                </ul>
+                <p>桌面文具<a href="##">更多</a></p>
+                <ul class="clear">
+                        <li> <a href="##">订书机 打孔机 起订器 推夹器</a> </li>
+                        <li> <a href="##">美工刀 剪刀 卷笔刀 切纸刀 雕刻刀 刀垫</a> </li>
+                        <li> <a href="##">长尾夹 票夹 白钢夹 推夹</a> </li>
+                        <li> <a href="##">直尺 三角尺 卷尺 游标卡尺 圆规 放大镜</a> </li>
+                        <li> <a href="##">回形针 订书针 大头针 图钉 别针</a> </li>
+                        <li> <a href="##">计算器</a> </li>
+                        <li> <a href="##">印台 印泥 印油</a> </li>
+                        <li> <a href="##">印章 印章盒 印章箱 收银箱</a> </li>
+                        <li> <a href="##">文具胶带 隐形胶带 胶带座</a> </li>
+                        <li> <a href="##">固体胶 液体胶 特种胶水</a> </li>
+                        <li> <a href="##">笔筒</a> </li>
+                        <li> <a href="##">号码机 号码机墨水 号码机专用毛毡</a> </li>
+                        <li> <a href="##">钥匙扣 钥匙盘</a> </li>
+                        <li> <a href="##">温度计 湿度计 指南针 电子秤</a> </li>
+                        <li> <a href="##">镊子 指甲钳</a> </li>
+                        <li> <a href="##">叫人铃 票叉</a> </li>
+                        <li> <a href="##">湿手缸 点钞蜡</a> </li>
+                        <li> <a href="##">地球仪</a> </li>
+
+                </ul>
+                <p>办公耗材<a href="##">更多</a></p>
+                <ul class="clear">
+                        <li> <a href="##">墨盒</a> </li>
+                        <li> <a href="##">硒鼓 鼓组件 感光鼓</a> </li>
+                        <li> <a href="##">色带芯 色带框</a> </li>
+                        <li> <a href="##">连供墨水系统  墨水</a> </li>
+                        <li> <a href="##">墨粉 粉盒</a> </li>
+                        <li> <a href="##">碳带</a> </li>
+                </ul>
+                <p>办公耗材<a href="##">更多</a></p>
+                <ul class="clear">
+                        <li> <a href="##">中性笔 中性笔芯</a> </li>
+                        <li> <a href="##">铅笔 铅芯</a> </li>
+                        <li> <a href="##">修正类 橡皮</a> </li>
+                        <li> <a href="##">特种笔 特种笔墨水 其它笔</a> </li>
+                        <li> <a href="##">水彩笔 蜡笔</a> </li>
+                        <li> <a href="##">记号笔 记号笔墨水</a> </li>
+                        <li> <a href="##">毛笔 墨汁</a> </li>
+                        <li> <a href="##">钢笔 墨囊 钢笔墨水</a> </li>
+                        <li> <a href="##">白板笔 白板笔墨水</a> </li>
+                        <li> <a href="##">唛克笔 唛克笔墨水</a> </li>
+                        <li> <a href="##">荧光笔 荧光笔墨水</a> </li>
+                        <li> <a href="##">圆珠笔 圆珠笔芯</a> </li>
+                        <li> <a href="##">宝珠笔 宝珠笔芯</a> </li>
+                        <li> <a href="##">油漆笔</a> </li>
+                        <li> <a href="##">可擦笔 可擦笔芯</a> </li>
+                        <li> <a href="##">台笔 电话笔</a> </li>
+
+                </ul>
+                <p>办公耗材<a href="##">更多</a></p>
+                <ul class="clear">
+                        <li> <a href="##">中性笔 中性笔芯</a> </li>
+                        <li> <a href="##">铅笔 铅芯</a> </li>
+                        <li> <a href="##">修正类 橡皮</a> </li>
+                        <li> <a href="##">特种笔 特种笔墨水 其它笔</a> </li>
+                        <li> <a href="##">水彩笔 蜡笔</a> </li>
+                        <li> <a href="##">记号笔 记号笔墨水</a> </li>
+                        <li> <a href="##">毛笔 墨汁</a> </li>
+                        <li> <a href="##">钢笔 墨囊 钢笔墨水</a> </li>
+                        <li> <a href="##">白板笔 白板笔墨水</a> </li>
+                        <li> <a href="##">唛克笔 唛克笔墨水</a> </li>
+                        <li> <a href="##">荧光笔 荧光笔墨水</a> </li>
+                        <li> <a href="##">圆珠笔 圆珠笔芯</a> </li>
+                        <li> <a href="##">宝珠笔 宝珠笔芯</a> </li>
+                        <li> <a href="##">油漆笔</a> </li>
+                        <li> <a href="##">可擦笔 可擦笔芯</a> </li>
+                        <li> <a href="##">台笔 电话笔</a> </li>
+
+                </ul>
+                <p>办公耗材<a href="##">更多</a></p>
+                <ul class="clear">
+                        <li> <a href="##">中性笔 中性笔芯</a> </li>
+                        <li> <a href="##">铅笔 铅芯</a> </li>
+                        <li> <a href="##">修正类 橡皮</a> </li>
+                        <li> <a href="##">特种笔 特种笔墨水 其它笔</a> </li>
+                        <li> <a href="##">水彩笔 蜡笔</a> </li>
+                        <li> <a href="##">记号笔 记号笔墨水</a> </li>
+                        <li> <a href="##">毛笔 墨汁</a> </li>
+                        <li> <a href="##">钢笔 墨囊 钢笔墨水</a> </li>
+                        
                 </ul>
             </div>
             <div class="imgbox">
-                <img src="images/banner1.jpg"style="z-index: 1;"/>
+                <img src="images/banner1.jpg"/>
                 <img src="images/banner2.jpg"/>
                 <img src="images/banner3.jpg"/>
                 <img src="images/banner4.jpg"/>
             </div>
             <div class="right">
-                <img src="images/banner-1.jpg"/>
+                <img src="images/banner-1.jpg" style="z-index:1"/>
                 <img src="images/banner-3.jpg"/>
             </div>
             <div class="bottom">
-                <img src="images/banner-2.jpg"/>
+                <img src="images/banner-2.jpg" style="z-index:1"/>
                 <img src="images/banner-4.jpg"/>
             </div>
+            <div class="left">
+                <ul>
+                    <li>
+                        <i></i>
+                        <p>办公用品</p>
+                        
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>学生用品</p>
+                        
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>行政用品</p>
+                        
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>财务用品</p>
+                        
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>会议用品</p>
+                        
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>工厂用品</p>
+                        
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>工程用品</p>
+                       
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>定制用品</p>
+                        
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>教学用品</p>
+                       
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>美术用品</p>
+                       
+                    </li>
+                </ul>
+            </div>
+            
         </div>
     </div>
     <div id="special">
@@ -149,7 +235,7 @@
                     </ul>
                 </div>
                 <div class="bottom">
-
+                    
                 </div>
             </div>
         </div>
@@ -166,12 +252,36 @@
                 </div>
                 <div class="r-right clear">
                     <div class="r-r-top">
-
-
-
+                        <ul>
+                            <li>公告</li>
+                            <li>资讯</li>
+                            <li>更多...</li>
+                        </ul>
                     </div>
                     <div class="r-r-bottom">
-
+                        <!-- <ul>
+                            <li>
+                                <a href="##" class="over">积分活动调整</a>
+                            </li>
+                            <li>
+                                <a href="##" class="over">奖励金活动上线</a>
+                            </li>
+                            <li>
+                                <a href="##" class="over">极速达有偿配送服务开通</a>
+                            </li>
+                            <li>
+                                <a href="##" class="over">最新邮费政策</a>
+                            </li>
+                            <li>
+                                <a href="##" class="over">超级会员周活动</a>
+                            </li>
+                            <li>
+                                <a href="##" class="over">发票开具规则更新</a>
+                            </li>
+                            <li>
+                                <a href="##" class="over">办公采购，文具1号比东东更便宜！</a>
+                            </li>
+                        </ul> -->
 
 
                     </div>
@@ -706,6 +816,12 @@
     <div id="friend">
         
     </div>
+    <div id="about">
+
+    </div>
+    <footer>
+
+    </footer>
 </body>
 <script>
     $("#banner").banner2({
@@ -778,5 +894,31 @@
         list:true,
         index:0
     })
+    $("#login").mouseover(function(){
+        $(".vip").css({display:"block"})
+        
+    }).mouseout(function(){
+        $(".vip").css({display:"none"})
+    })
+    $("#login").mouseover(function(){
+        $(".my").css({display:"block"})
+        
+    }).mouseout(function(){
+        $(".my").css({display:"none"})
+    })
+    $("#login").mouseover(function(){
+        $(".dis").css({display:"block"})
+        
+    }).mouseout(function(){
+        $(".dis").css({display:"none"})
+    })
+    $("#login").mouseover(function(){
+        $(".nav").css({display:"block"})
+    
+    }).mouseout(function(){
+        $(".nav").css({display:"none"})
+    })
+    
 </script>
+<script src="js/index.js"></script>
 </html>

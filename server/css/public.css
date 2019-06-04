@@ -183,7 +183,7 @@ nav {
         background: #da211f url(../images/73.gif) no-repeat right 0; }
 
 #friend {
-  height: 500px;
+  height: 460px;
   padding-top: 40px;
   background: #fff; }
   #friend .margin .f-top {
@@ -198,14 +198,76 @@ nav {
           width: 100px;
           height: 30px;
           float: left;
-          background: #f3f3f3;
+          background: #999;
           font: 12px/30px "";
-          color: #000;
+          color: #fff;
           text-align: center; }
       #friend .margin .f-top .t .t-b {
         height: 72px;
-        margin-top: 20px;
-        background: red; }
+        margin: 20px 0; }
   #friend .margin .f-bottom {
-    height: 241px;
+    height: 171px;
+    padding-bottom: 70px;
     border-top: 1px solid #e1e1e1; }
+    #friend .margin .f-bottom .f-b-left {
+      width: 970px;
+      height: 170px; }
+      #friend .margin .f-bottom .f-b-left ul {
+        float: left;
+        margin-left: 70px;
+        padding-top: 11px;
+        display: flex;
+        justify-content: center; }
+        #friend .margin .f-bottom .f-b-left ul li {
+          width: 170px; }
+          #friend .margin .f-bottom .f-b-left ul li dl dh {
+            font: 16px/40px "";
+            color: #666; }
+          #friend .margin .f-bottom .f-b-left ul li dl dd {
+            font: 12px/20px ""; }
+            #friend .margin .f-bottom .f-b-left ul li dl dd a {
+              color: #000; }
+              #friend .margin .f-bottom .f-b-left ul li dl dd a:hover {
+                text-decoration: underline; }
+        #friend .margin .f-bottom .f-b-left ul img {
+          float: right;
+          display: block;
+          margin-top: 14px;
+          width: 149px;
+          height: 115px; }
+
+#about {
+  height: 38px;
+  background: #c80928; }
+  #about .margin ul {
+    margin-left: 342px;
+    width: 506px;
+    display: flex;
+    justify-content: space-around; }
+    #about .margin ul li {
+      font: 12px/38px "";
+      color: #fff; }
+      #about .margin ul li a {
+        color: #fff; }
+        #about .margin ul li a:hover {
+          text-decoration: underline; }
+
+footer {
+  height: 140px;
+  text-align: center; }
+  footer .margin p {
+    font: 14px/2 "";
+    color: #9a9a9a; }
+  footer .margin p:nth-child(1) {
+    margin-top: 24px; }
+  footer .margin .zf {
+    margin-top: 14px; }
+    footer .margin .zf img:nth-child(1) {
+      width: 102px;
+      height: 36px; }
+    footer .margin .zf img:nth-child(2) {
+      width: 102px;
+      height: 36px; }
+    footer .margin .zf img:nth-child(3) {
+      width: 102px;
+      height: 36px; }

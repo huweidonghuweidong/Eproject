@@ -38,6 +38,7 @@
             }).eq(index).css({
                 background:"red"
             })
+            clearInterval();
             setInterval(() => {
                 // index+=1;
                 if(index==3){

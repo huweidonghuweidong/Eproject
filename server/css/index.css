@@ -6,6 +6,40 @@
   height: 450px; }
   #banner .margin {
     position: relative; }
+    #banner .margin .cai {
+      width: 810px;
+      height: 450px;
+      display: none;
+      z-index: 500;
+      background: rgba(255, 255, 255, 0.95);
+      position: absolute;
+      left: 200px;
+      top: 0;
+      box-sizing: border-box;
+      padding: 6px 40px 0 14px; }
+      #banner .margin .cai p {
+        margin-top: 5px;
+        color: #d41f2a;
+        font: 12px/2 "";
+        border-bottom: 1px dashed #ccc; }
+        #banner .margin .cai p a {
+          color: #000;
+          float: right; }
+          #banner .margin .cai p a:hover {
+            color: #d41f2a;
+            text-decoration: underline; }
+      #banner .margin .cai ul {
+        width: 764px; }
+        #banner .margin .cai ul li {
+          float: left;
+          padding: 0 6px;
+          margin-top: 2px;
+          border-left: 1px solid #ccc; }
+          #banner .margin .cai ul li a:hover {
+            color: #d41f2a;
+            text-decoration: underline; }
+    #banner .margin .imgbox img:nth-child(1) {
+      z-index: 1; }
     #banner .margin .left {
       float: left;
       width: 200px;
@@ -25,14 +59,6 @@
           width: 17px;
           height: 17px;
           background: url(../images/tubiao.png) no-repeat; }
-        #banner .margin .left ul li div {
-          width: 810px;
-          height: 450px;
-          display: none;
-          background: rgba(200, 200, 200, 0.6);
-          position: absolute;
-          left: 200px;
-          top: 0; }
       #banner .margin .left ul li:nth-child(1) i {
         background-position: 0 0; }
       #banner .margin .left ul li:nth-child(1):hover {
@@ -162,6 +188,7 @@
         display: flex; }
         #special .margin .right .top ul li {
           width: 125px;
+          cursor: pointer;
           height: 38px;
           font: 16px/38px "";
           color: #28313a;
@@ -181,6 +208,42 @@
       height: 250px;
       border-top: 1px solid #f65a43;
       border-bottom: 1px solid #dbdbdb; }
+      #special .margin .right .bottom .l, #special .margin .right .bottom .c, #special .margin .right .bottom .r {
+        float: left;
+        width: 197px;
+        height: 100%;
+        border-right: 1px solid #e1e1e1; }
+        #special .margin .right .bottom .l a, #special .margin .right .bottom .c a, #special .margin .right .bottom .r a {
+          display: block;
+          width: 167px;
+          height: 225px;
+          padding-left: 30px; }
+          #special .margin .right .bottom .l a img, #special .margin .right .bottom .c a img, #special .margin .right .bottom .r a img {
+            width: 140px;
+            height: 140px;
+            display: block;
+            margin-top: 25px; }
+          #special .margin .right .bottom .l a h3, #special .margin .right .bottom .c a h3, #special .margin .right .bottom .r a h3 {
+            font: 12px/38px "";
+            color: #000; }
+          #special .margin .right .bottom .l a p, #special .margin .right .bottom .c a p, #special .margin .right .bottom .r a p {
+            font: 14px/30px "";
+            color: #d22600;
+            position: relative; }
+            #special .margin .right .bottom .l a p b, #special .margin .right .bottom .c a p b, #special .margin .right .bottom .r a p b {
+              color: #999;
+              font: 12px/38px ""; }
+          #special .margin .right .bottom .l a p:after, #special .margin .right .bottom .c a p:after, #special .margin .right .bottom .r a p:after {
+            content: "";
+            display: block;
+            width: 64px;
+            height: 1px;
+            background: #999;
+            position: absolute;
+            left: 74px;
+            top: 20px; }
+      #special .margin .right .bottom .r {
+        border-right: none; }
 
 #shopping {
   height: 442px;
@@ -211,9 +274,34 @@
       #shopping .margin .right .r-right .r-r-top {
         height: 40px;
         background: #e0e0e0; }
+        #shopping .margin .right .r-right .r-r-top ul {
+          width: 100%;
+          height: 100%;
+          display: flex; }
+          #shopping .margin .right .r-right .r-r-top ul li {
+            cursor: pointer;
+            width: 64px;
+            height: 40px;
+            background: e0e0e0;
+            color: #646464;
+            font: 16px/40px "";
+            text-align: center; }
+            #shopping .margin .right .r-right .r-r-top ul li:nth-child(3) {
+              color: #000; }
       #shopping .margin .right .r-right .r-r-bottom {
         width: 192px;
         height: 283px; }
+        #shopping .margin .right .r-right .r-r-bottom ul li a {
+          display: block;
+          width: 180px;
+          height: 39px;
+          border-bottom: 1px solid #e0e0e0;
+          font: 12px/39px "";
+          color: #9f9f9f;
+          margin-left: 3px; }
+          #shopping .margin .right .r-right .r-r-bottom ul li a:hover {
+            cursor: pointer;
+            color: #d41f2a; }
   #shopping .margin .img {
     height: 90px; }
 
