@@ -3,13 +3,61 @@
 
     class Register{
         constructor(){
+            this.index=0;
+            this.diff();
+        }
+        diff(){
+            var that=this;
+            $("#user").on("input",function(){
+                if($("#user").val().length>10){
+                    $(".dl h3").empty()
+                    $(".dl h3").html("用户名过长").css({color:"red",font:'700 28px/54px ""'})
+                    that.index=3;
+                }else{
+                    $(".dl h3").empty()
+                    $(".dl h3").html("账号密码注册").css({font:'700 20px/54px ""',color:"#e9242b"})
+                    that.index=0;
+                }
+            })
+            $("#pass2").on("input",function(){
+                if($("#pass").val()==$("#pass2").val()){
+                    $(".dl h3").empty()
+                    $(".dl h3").html("账号密码注册").css({font:'700 20px/54px ""',color:"#e9242b"})
+                    that.index=1;
+                }else{
+                    $(".dl h3").empty()
+                    $(".dl h3").html("两次密码不一致").css({color:"red",font:'700 28px/54px ""'})
+                    that.index=0;
+                }
+                console.log(that.index)
+            })
+            console.log(this.index)
             this.init();
+            
         }
         init(){
             var that=this;
+            
             $("#btn").click(function(){
-                //使用localStorage,获取到指定的，来判断是否是第一次注册
-                that.judge();
+                if(that.index==1){
+                    //判断输入是否为空
+                    if($("#user").val()==""){
+                        $(".dl h3").empty()
+                        $(".dl h3").html("注册失败，请输入账号").css({color:"red",font:'700 28px/54px ""'})
+                        return;
+                    }
+                    if($("#pass").val()==""){
+                        $(".dl h3").empty()
+                        $(".dl h3").html("注册失败，请输入密码").css({color:"red",font:'700 28px/54px ""'})
+                        return;
+                    }
+                    
+                    
+                    //使用localStorage,获取到指定的，来判断是否是第一次注册
+                    that.judge();
+
+                }
+                
             })
         }
         judge(){
@@ -31,7 +79,7 @@
                 for(var i=0;i<this.juser.length;i++){
                     if($("#user").val()==this.juser[i].user){
                         $(".dl h3").empty()
-                        $(".dl h3").html("账号重复，请去登录，或重新输入").css({color:"#f8392b",font:'700 28px/54px ""'})
+                        $(".dl h3").html("账号重复，请去登录或重新输入").css({color:"#f8392b",font:'700 28px/54px ""'})
                         //重名后就停止
                         return;
                     }

@@ -377,11 +377,16 @@
     new Index();
     
     $("#nn").children("li").click(function(){
-        $(this).css({background:"#c40001"}).siblings().css({background:"#b6b6b6"})
+        $(this).css({background:"#c40001"}).siblings().css({background:"#666"})
         $("html").animate({
             scrollTop:$(".ff").eq($(this).index()).offset().top
         })
     });
+    $("#nn #last").click(function(){
+        $("html").animate({
+            scrollTop:"0px",
+        })
+    })
     $(document).scroll(function() {
         console.log($(document).scrollTop())
         if($(document).scrollTop()>750){
@@ -393,4 +398,34 @@
             $("#sou").css({display:"none"})
         }
     });
+    //图片懒加载就是利用图片距离顶端的距离小于浏览器可视高度+滚动的距离时，将自定义的data-src改成src，让页面可以加载图片
+    var aimg = document.querySelectorAll("img");
+    var clientH = document.documentElement.clientHeight;
+    function lazyLog(arr){
+        var scrollT = document.documentElement.scrollTop;
+        
+        for(var i=0;i<arr.length;i++){
+            if(arr[i].src != "") continue;
+
+            if(arr[i].offsetTop < clientH + scrollT){
+                arr[i].src = arr[i].getAttribute("data-src");
+            }
+        }
+    }
+
+    lazyLog(aimg)
+
+    onscroll = function(){
+        lazyLog(aimg)
+    }
+
+    // $(window).scroll(function(){
+    //     // console.log($(document).scrollTop())
+    //     for(var i=0;i<$("img").length;i++){
+    //         if($("img").eq(i).offset().top<$(window).height()+$(document).scrollTop()){
+    //             $("img").eq(i).src=$("img").eq(i).get
+    //         }
+    //     }
+    // })
+
 })()

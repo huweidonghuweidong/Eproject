@@ -34,7 +34,7 @@
                 }
             }
             $(".dl h3").empty()
-            $(".dl h3").html("登录失败，请检查账号密码是否正确，或者前去注册").css({color:"red",font:'700 28px/28px ""'})
+            $(".dl h3").html("登录失败，请检查账号密码是否正确，或者前去注册").css({color:"red",font:'700 16px/28px ""'})
         }
     }
     new Login();
