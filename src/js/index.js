@@ -5,7 +5,7 @@
     // })
     // let a=document.querySelector("#login")
     // let b=document.querySelector(".vip")
-    // console.log(a)
+    // ////console.log(a)
     // a.onclick=function(){
     //     b.style.display="block"
     // }
@@ -75,7 +75,7 @@
     // var str="";
     // var index=0;
     
-    // console.log(index)
+    // ////console.log(index)
     class Special{
         constructor(){
             this.str="";
@@ -332,7 +332,7 @@
         }
     }
     new New();
-    console.log($("#dl"))
+    ////console.log($("#dl"))
     class Index{
         constructor(){
             this.init();
@@ -343,14 +343,14 @@
             //检查onoff的值
             for(var i=0;i<this.juser.length;i++){
                 if(this.juser[i].onoff==1){
-                    console.log( $("#dl"))
+                    // ////console.log( $("#dl"))
                     // $("#dl").remove();
                     // $("#zx").append(`<a id="dl">${this.juser[i].user}</a>`);
                     $("#dl").text(this.juser[i].user);
                     $("#dl").attr('href','##');
                     $("#logout").css({display:"inline-block"})
                     $("#zc").css({display:"none"})
-                    // console.log($("#dl").html(this.juser[i].user))
+                    // ////console.log($("#dl").html(this.juser[i].user))
                     this.addLogout();
 
                 }
@@ -360,7 +360,7 @@
             var that=this;
             $("#logout").click(function(){
                 //找到具体的账号
-                console.log(typeof($("#dl").text()))
+                ////console.log(typeof($("#dl").text()))
                 for(var i=0;i<that.juser.length;i++){
                     if( $("#dl").text()==that.juser[i].user){
                         that.juser[i].onoff=0;
@@ -388,7 +388,7 @@
         })
     })
     $(document).scroll(function() {
-        console.log($(document).scrollTop())
+        ////console.log($(document).scrollTop())
         if($(document).scrollTop()>750){
             $("#nn").css({display:"block"})
             $("#sou").css({display:"block"})
@@ -398,6 +398,101 @@
             $("#sou").css({display:"none"})
         }
     });
+    
+
+    // $(window).scroll(function(){
+    //     // ////console.log($(document).scrollTop())
+    //     for(var i=0;i<$("img").length;i++){
+    //         if($("img").eq(i).offset().top<$(window).height()+$(document).scrollTop()){
+    //             $("img").eq(i).src=$("img").eq(i).get
+    //         }
+    //     }
+    // })
+    class Goods{
+        constructor(fie,url){
+            this.fie=fie;
+            this.url=url;
+            this.init();
+        }
+        init(){
+            var that=this;
+            $.ajax({
+                // url:"http://localhost:8383/json/indexF1.json",
+                url:this.url,
+                success:function(res){
+                    // ////console.log(res)
+                    that.res=res;
+                    //生成页面
+                    that.display();
+                }
+            })
+        }
+        display(){
+            var str="";
+            // ////console.log(this.res)
+            //console.log(this.fie)
+            for(var i=0;i<3;i++){
+                str+= `<div class="r-r">
+                            <a href="##">
+                                <img data-src="${this.res[i].src}"/>
+                                <div class="r-r-c">
+                                    <h3>${this.res[i].name}</h3>
+                                    <p>${this.res[i].num}</p>
+                                </div>
+                            </a>
+                            <a href="##">
+                            <img data-src="${this.res[i+3].src}"/>
+                            <div class="r-r-c">
+                                <h3>${this.res[i+3].name}</h3>
+                                <p>${this.res[i+3].num}</p>
+                            </div>
+                            </a>
+                        </div>`
+            }
+            $(this.fie).html(str); 
+            // $(".f2 .right").html(str); 
+            // $(".f3 .right").html(str); 
+            // $(".f4 .right").html(str); 
+            // $(".f5 .right").html(str); 
+            // $(".f6 .right").html(str); 
+            // $(".f7 .right").html(str); 
+            var aimg = document.querySelectorAll("img");
+            var clientH = document.documentElement.clientHeight;
+            function lazyLog(arr){
+                var scrollT = document.documentElement.scrollTop;
+                
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i].src != "") continue;
+
+                    if(arr[i].offsetTop < clientH + scrollT){
+                        arr[i].src = arr[i].getAttribute("data-src");
+                    }
+                }
+            }
+
+            lazyLog(aimg)
+
+            onscroll = function(){
+                lazyLog(aimg)
+            }
+        }
+    }
+    var url1="http://localhost:8383/json/indexF1.json"
+    var url2="http://localhost:8383/json/indexF2.json"
+    var url3="http://localhost:8383/json/indexF3.json"
+    var url4="http://localhost:8383/json/indexF4.json"
+    var url5="http://localhost:8383/json/indexF5.json"
+    var url6="http://localhost:8383/json/indexF6.json"
+    var url7="http://localhost:8383/json/indexF7.json"
+    
+    new Goods("#f1",url1);
+    new Goods("#f2",url2);
+    new Goods("#f3",url3);
+    new Goods("#f4",url4);
+    new Goods("#f5",url5);
+    new Goods("#f6",url6);
+    new Goods("#f7",url7);
+    
     //图片懒加载就是利用图片距离顶端的距离小于浏览器可视高度+滚动的距离时，将自定义的data-src改成src，让页面可以加载图片
     var aimg = document.querySelectorAll("img");
     var clientH = document.documentElement.clientHeight;
@@ -418,14 +513,5 @@
     onscroll = function(){
         lazyLog(aimg)
     }
-
-    // $(window).scroll(function(){
-    //     // console.log($(document).scrollTop())
-    //     for(var i=0;i<$("img").length;i++){
-    //         if($("img").eq(i).offset().top<$(window).height()+$(document).scrollTop()){
-    //             $("img").eq(i).src=$("img").eq(i).get
-    //         }
-    //     }
-    // })
-
+    //console.log()
 })()

@@ -340,20 +340,20 @@ main {
     main .margin .ff .f1-4 {
       float: left;
       margin-left: 1px; }
-    main .margin .ff .right {
+    main .margin .ff .rr {
       width: 597px;
       height: 422px;
       float: right;
       background: #fff; }
-      main .margin .ff .right .r-r {
+      main .margin .ff .rr .r-r {
         float: left;
         width: 199px;
         height: 422px; }
-        main .margin .ff .right .r-r .r-r-c {
+        main .margin .ff .rr .r-r .r-r-c {
           width: 199px;
           height: 54px;
           text-align: center; }
-        main .margin .ff .right .r-r img:hover {
+        main .margin .ff .rr .r-r img:hover {
           transition: .3s linear all;
           transform: translate(-7px, 0); }
 
