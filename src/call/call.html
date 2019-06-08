@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../public/css/public.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="css/call.css">
+    <script src="../public/js/jquery.2.2.4.js"></script>
+    <script src="../public/js/cookie.js"></script>
+    <script>
+        $(function(){
+            $("#top").load("http://localhost:8383/details/public/public-d.html .top")
+        })
+        $(function(){
+            $("header").load("http://localhost:8383/details/public/public-d.html .header")
+        })
+        $(function(){
+            $("nav").load("http://localhost:8383/details/public/public-d.html .mm")
+        })
+        $(function(){
+            $("#friend").load("http://localhost:8383/details/public/public-d.html .footer-top")
+        })
+        $(function(){
+            $("footer").load("http://localhost:8383/details/public/public-d.html .footer")
+        })
+        $(function(){
+            $("#about").load("http://localhost:8383/details/public/public-d.html .about")
+        })
+    </script>
+</head>
+<body>
+    <div id="top">
+        
+    </div>
+    <div id="login">
+    <div class="margin">
+            <p id="zx">欢迎来文具1号商城！
+                <a href="../../login/login.html" id="dl" class="over">登录</a>
+                <a href="../../login/register.html" id="zc">免费注册</a>
+                <a href="##" id="logout">注销</a>
+            </p>
+            <ul>
+                <li>商城首页</li>
+                <span>|</span>
+                <li class="active1">会员中心</li>
+                <span>|</span>
+                <li class="active2">我的收藏</li>
+                <span>|</span>
+                <li class="active3">我的福利</li>
+                <span>|</span>
+                <li>申请商家入驻</li>
+                <span>|</span>
+                <li>帮助中心</li>
+                <span>|</span>
+                <li class="active4">网站导航</li>
+                <span>|</span>
+                <li>电子协议</li>
+                
+                <li class="last">
+                    <a href="http://localhost:8383/call/call.html">
+                        我的购物车
+                    </a>
+                    <span>0</span>
+                </li>
+            </ul>
+            
+            <div class="vip">
+                <dl>
+                    <dd>全部订单</dd>
+                    <dd class="te">待付款订单</dd>
+                    <dd>待收货订单</dd>
+                </d>
+            </div>
+            <div class="my">
+                <dl>
+                    <dd>收藏的商品</dd>
+                    <dd>收藏的店铺</dd>
+                </d>
+            </div>
+            <div class="dis">
+                <dl>
+                    <dd>我的优惠券</dd>
+                    <dd>我的礼品券</dd>
+                    <dd>我的奖励金</dd>
+                    <dd>我的积分</dd>
+                </d>
+            </div>
+            <div class="nav">
+                <dl>
+                    <dd>会员体系</dd>
+                    <dd>售后政策</dd>
+                    <dd>退换流程</dd>
+                    <dd>配送费用</dd>
+                    <dd>在线客服</dd>
+                </d>
+            </div>
+        </div>
+    </div>
+    <header>
+        
+    </header>
+    <nav>
+    
+    </nav>
+    <main>
+       <div class="margin">
+        <div class="option">
+            <p class="add1">
+                <input type="checkbox" id="total">
+                全选
+            </p>
+            <p class="add2">商品</p>
+            <p class="add3">商品信息</p>
+            <p class="add4">单价</p>
+            <p class="add5">数量</p>
+            <p class="add6">小计</p>
+            <p class="add7">操作</p>
+        </div>
+        <div class="dian">店铺：文具1号超市</div>
+        <div class="shopp">
+            <div class="ss">
+                <!-- <div class="buy1">
+                    1
+                    <input type="checkbox">
+                </div>
+                <div class="buy2">
+                    <img src="../images/f1-1-1.jpg">
+                    <p>金万年 中性笔 0.5mm水笔 签字笔</p>
+                </div>
+                <div class="buy3">
+                    <p>颜色：黑色</p>
+                    <p>12支装</p>
+                </div>
+                <div class="buy4">
+                    <p>￥9.41</p>
+                </div>
+                <div class="buy5">
+                    <input type="number" id="ii" value="1" min="1">
+                </div>
+                <div class="buy6">
+                    <p>￥9.41</p>
+                </div>
+                <div class="buy7">
+                    <input type="button" value="删除" id="btn">
+                </div> -->
+            </div>
+        </div>
+        <div class="mon">
+            <p>结算</p>
+            <input type="text" id="add" placeholder="0">
+            <span>合计(不含运费)：</span>
+        </div>
+       </div>
+    </main>
+
+
+
+    <div id="friend">
+        
+    </div>
+    <div id="about">
+
+    </div>
+    <footer>
+
+    </footer>
+</body>
+<script src="js/call.js"></script>
+</html>

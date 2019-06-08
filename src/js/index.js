@@ -482,21 +482,21 @@
         addEvent(){
             var that=this;
             $(this.fie).on("click","a",function(){
-                // console.log($(this).parent().attr("num"))
-                // console.log($(this).attr("num"))
-                that.id=$(this).attr("index");
-                that.num=$(this).parent().attr("num");
-                //获取到cookie
-                that.goods=getCookie("goods")
-                //清空一下cookie
-                delectCookie("goods")
-                //存进cookie
-                that.goods=[{
-                    id:that.id,
-                    num:that.num
-                }]
-                setCookie("goods",JSON.stringify(that.goods))
-                open("http://localhost:8383/shopping/shopping.html")
+                // // console.log($(this).parent().attr("num"))
+                // // console.log($(this).attr("num"))
+                // that.id=$(this).attr("index");
+                // that.num=$(this).parent().attr("num");
+                // //获取到cookie
+                // that.goods=getCookie("goods")
+                // //清空一下cookie
+                // delectCookie("goods")
+                // //存进cookie
+                // that.goods=[{
+                //     id:that.id,
+                //     num:that.num
+                // }]
+                // setCookie("goods",JSON.stringify(that.goods),{path:"/"})
+                open("http://localhost:8383/details/details1.html")
             })
         }
     }

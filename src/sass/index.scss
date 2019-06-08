@@ -1,5 +1,4 @@
 .margin{width:1190px;margin:0 auto;}
-
 #banner{
     height:450px;
     .margin{
@@ -21,7 +20,6 @@
                 font:12px/2 "";
                 border-bottom:1px dashed #ccc;
                 a{
-                
                     color:#000;
                     float:right;
                     &:hover{
@@ -32,7 +30,7 @@
             }
             ul{
                width:764px;
-                
+            
                 li{
                     float:left;
                     padding: 0 6px;
@@ -75,7 +73,7 @@
                        background: url(../images/tubiao.png) no-repeat;
                    }
                 }
-
+    
                 li:nth-child(1){
                     i{
                         background-position: 0 0;
@@ -98,7 +96,7 @@
                         }
                     }
                 }
-
+            
                 li:nth-child(3){
                     i{
                         background-position: 0 -34px;
