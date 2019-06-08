@@ -3,36 +3,42 @@
         "src":"images/f6-1-1.jpg",
         "name":"得力",
         "num":"学生文具套装",
+        "pirse":"￥18.41",
         "id":"661"
     },
     {
         "src":"images/f6-1-2.jpg",
         "name":"树德",
         "num":"PP垫板",
+        "pirse":"￥18.41",
         "id":"662"
     },
     {
         "src":"images/f6-1-3.jpg",
         "name":"富尔梦",
         "num":"迪士尼塑料笔盒",
+        "pirse":"￥18.41",
         "id":"663"
     },
     {
         "src":"images/f6-1-4.jpg",
         "name":"变形金刚",
         "num":"小学生儿童双肩背包",
+        "pirse":"￥18.41",
         "id":"664"
     },
     {
         "src":"images/f6-1-5.jpg",
         "name":"优乐",
         "num":"迪士尼米妮文具礼盒",
+        "pirse":"￥18.41",
         "id":"665"
     },
     {
         "src":"images/f6-1-6.jpg",
         "name":"冠昕尔",
         "num":"凯蒂猫儿童保温杯",
+        "pirse":"￥18.41",
         "id":"666"
     }
 ]

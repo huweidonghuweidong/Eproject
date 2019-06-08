@@ -49,6 +49,7 @@ $(".nav").hover(function(){
 class Goods{
     constructor(){
         this.init();
+        this.addEvent();
     }
     init(){
         var that=this;
@@ -59,6 +60,7 @@ class Goods{
                 that.res=res;
                 //生成页面
                 that.display();
+
             }
         })
     }
@@ -66,14 +68,14 @@ class Goods{
         var str="";
         // console.log(this.res)
         for(var i=0;i<this.res.length;i++){
-            str+= `<div class="gg">
-                    <a href="##">
+            str+= `<div class="gg" num="8">
+                    <a index="${this.res[i].id}">
                         <img data-src="${this.res[i].src}"/>
                         <b>${this.res[i].pirce}</b>
                         <span>${this.res[i].name}</span>
                         <a href="http://localhost:8383/index.html" class="cs">文具一号超市</a><i>满就送</i>
                         <p>${this.res[i].num}</p>
-                        </a>
+                    </a>
                     </div>`
         }
         $("#goods .margin").html(str);
@@ -87,7 +89,7 @@ class Goods{
     
                 if(arr[i].offsetTop < clientH + scrollT){
                     arr[i].src = arr[i].getAttribute("data-src");
-                    console.log(i)
+                    // console.log(i)
                 }
             }
         }
@@ -95,6 +97,27 @@ class Goods{
         onscroll = function(){
             lazyLog(aimg)
         }
+    }
+    addEvent(){
+        var that=this;
+        $("#goods .margin").on("click","a",function(){
+            // console.log($(this).parent().attr("num"))
+            // console.log($(this).attr("num"))
+            that.id=$(this).attr("index");
+            that.num=$(this).parent().attr("num");
+            //获取到cookie
+            that.goods=getCookie("goods")
+            console.log(that.goods)
+            //清空一下cookie
+            // console.log(1)
+            delectCookie("goods")
+            //存进cookie
+            that.goods=[{
+                id:that.id,
+                num:that.num
+            }]
+            setCookie("goods",JSON.stringify(that.goods))
+        })
     }
 }
 new Goods();

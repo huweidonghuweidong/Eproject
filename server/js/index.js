@@ -409,10 +409,12 @@
     //     }
     // })
     class Goods{
-        constructor(fie,url){
+        constructor(fie,url,n){
+            this.n=n;
             this.fie=fie;
             this.url=url;
             this.init();
+            this.addEvent();
         }
         init(){
             var that=this;
@@ -432,15 +434,15 @@
             // ////console.log(this.res)
             //console.log(this.fie)
             for(var i=0;i<3;i++){
-                str+= `<div class="r-r">
-                            <a href="##">
+                str+= `<div class="r-r" num="${this.n}">
+                            <a index="${this.res[i].id}">
                                 <img data-src="${this.res[i].src}"/>
                                 <div class="r-r-c">
                                     <h3>${this.res[i].name}</h3>
                                     <p>${this.res[i].num}</p>
                                 </div>
                             </a>
-                            <a href="##">
+                            <a index="${this.res[i+3].id}">
                             <img data-src="${this.res[i+3].src}"/>
                             <div class="r-r-c">
                                 <h3>${this.res[i+3].name}</h3>
@@ -476,6 +478,27 @@
                 lazyLog(aimg)
             }
         }
+        //添加点击事件
+        addEvent(){
+            var that=this;
+            $(this.fie).on("click","a",function(){
+                // console.log($(this).parent().attr("num"))
+                // console.log($(this).attr("num"))
+                that.id=$(this).attr("index");
+                that.num=$(this).parent().attr("num");
+                //获取到cookie
+                that.goods=getCookie("goods")
+                //清空一下cookie
+                delectCookie("goods")
+                //存进cookie
+                that.goods=[{
+                    id:that.id,
+                    num:that.num
+                }]
+                setCookie("goods",JSON.stringify(that.goods))
+                open("http://localhost:8383/shopping/shopping.html")
+            })
+        }
     }
     var url1="http://localhost:8383/json/indexF1.json"
     var url2="http://localhost:8383/json/indexF2.json"
@@ -485,13 +508,13 @@
     var url6="http://localhost:8383/json/indexF6.json"
     var url7="http://localhost:8383/json/indexF7.json"
     
-    new Goods("#f1",url1);
-    new Goods("#f2",url2);
-    new Goods("#f3",url3);
-    new Goods("#f4",url4);
-    new Goods("#f5",url5);
-    new Goods("#f6",url6);
-    new Goods("#f7",url7);
+    new Goods("#f1",url1,1);
+    new Goods("#f2",url2,2);
+    new Goods("#f3",url3,3);
+    new Goods("#f4",url4,4);
+    new Goods("#f5",url5,5);
+    new Goods("#f6",url6,6);
+    new Goods("#f7",url7,7);
     
     //图片懒加载就是利用图片距离顶端的距离小于浏览器可视高度+滚动的距离时，将自定义的data-src改成src，让页面可以加载图片
     var aimg = document.querySelectorAll("img");

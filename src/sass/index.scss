@@ -21,7 +21,7 @@
                 font:12px/2 "";
                 border-bottom:1px dashed #ccc;
                 a{
-
+                
                     color:#000;
                     float:right;
                     &:hover{
@@ -30,7 +30,6 @@
                     }
                 }
             }
-        
             ul{
                width:764px;
                 
@@ -44,7 +43,7 @@
                             color:#d41f2a;
                             text-decoration: underline
                         }
-                    
+                
                     }
                 }
             }
@@ -76,6 +75,7 @@
                        background: url(../images/tubiao.png) no-repeat;
                    }
                 }
+
                 li:nth-child(1){
                     i{
                         background-position: 0 0;
@@ -98,6 +98,7 @@
                         }
                     }
                 }
+
                 li:nth-child(3){
                     i{
                         background-position: 0 -34px;
@@ -120,6 +121,7 @@
                         }
                     }
                 }
+        
                 li:nth-child(5){
                     i{
                         background-position: 0 -68px;
@@ -132,6 +134,7 @@
                     }
                 }
                 li:nth-child(6){
+
                     i{
                         background-position: 0 -85px;
                     }
@@ -141,6 +144,7 @@
                             background-position: -17px -85px;
                         }
                     }
+
                 }
                 li:nth-child(7){
                     i{
